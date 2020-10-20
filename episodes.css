@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
+  background-color: #2c3a47;
+}
+#nav {
+  display: flex;
+  height: 50px;
+  background-color: #2c3a47;
+  padding-left: 50px;
+  border-bottom: 1px solid white;
+}
+.nav-btn {
+  font-size: 20px;
+  margin: 5px;
+  width: 170px;
+  height: 40px;
+  color: #2ed573;
+  border: 1px solid #2ed573;
+  background-color: #2c3a47;
+}
+.nav-btn:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: #2ed573;
+}
+#logo {
+  height: 50px;
+  border-radius: 50%;
+}
+#logo:hover {
+  margin-top: 2px;
+  height: 45px;
+  transition: 0.5s;
+}
+h3 {
+  padding: 10px;
+}
+span {
+  color: #2ed573;
+}
+#Episodes {
+  color: white;
+  background-color: #2ed573;
+}
+.poster {
+  height: 150px;
+  margin: 10px;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  letter-spacing: 2px;
+  color: white;
+  margin: 10px;
+  border: 0.5px solid #2ed573;
+  display: flex;
+  box-shadow: 5px 3px 3px black;
+  min-width: 630px;
+}
+#search_episode {
+  font-size: 20px;
+  margin-top: 10px;
+  height: 20px;
+  padding: 5px 50px;
+  margin-left: 50px;
+  border: 1px solid #2ed573;
+  background-color: white;
+}
+#meeseek {
+  width: 300px;
+  height: 100px;
+  margin-left: 500px;
+}
