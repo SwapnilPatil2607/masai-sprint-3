@@ -62,6 +62,10 @@ span {
   min-width: 400px;
   max-height: 100px;
 }
+.card:hover {
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px 1px black;
+}
 .details {
   margin-top: 10px;
 }

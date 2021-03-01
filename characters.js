@@ -15,8 +15,18 @@ const getepis=()=>{
     location.assign("episodes.html");
 }
 const chardetails=()=>{
+    var xhr=new XMLHttpRequest();
+    xhr.open("GET","https://rickandmortyapi.com/api/character/");
+    xhr.send();
+    xhr.onload=()=>{
+        var res=JSON.parse(xhr.response);
+        localStorage.setItem("characters",JSON.stringify(res.results));
+    }
+
     localStorage.removeItem("episodes");
-var characters=JSON.parse(localStorage.getItem("characters"));
+    var storage=localStorage.getItem("characters")
+var characters=JSON.parse(storage);
+console.log(characters)
     var div=document.getElementById("char_details");
              for(var i=0;i<characters.length;i++){
                         var card=document.createElement("div");
